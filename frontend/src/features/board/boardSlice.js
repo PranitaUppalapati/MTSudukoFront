@@ -4,8 +4,8 @@ import socket from "socket.io-client";
 import object from "./initialarray";
 
 const url = "http://localhost:3001";
-const heroku = "https://reduxokubackend.herokuapp.com"
-export const hitpoint = (window.location.href.includes("localhost",0)) ? url : heroku ; 
+const production = process.env.REACT_APP_BACKEND_URL || "https://reduxokubackend.herokuapp.com";
+export const hitpoint = (window.location.href.includes("localhost",0)) ? url : production;
 
 window.io = socket(hitpoint+"/gameplay"); //we have to make this socket instance accessible in all our components. That is why we are using the 'window' work to declare it as a global variable. 
 

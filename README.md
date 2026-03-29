@@ -63,10 +63,27 @@ npm run backend    # Node server on port 3001
 
 ## Deployment
 
-The frontend expects the backend URL to be set in `frontend/src/features/board/boardSlice.js`:
-- Development: `http://localhost:3001`
-- Production: update to your deployed backend URL
+### Backend — Render
 
-**Recommended hosting:**
-- Backend: [Render](https://render.com) or [Railway](https://railway.app)
-- Frontend: [Vercel](https://vercel.com) or [Netlify](https://netlify.com)
+1. Go to [render.com](https://render.com) and create a new account (or log in)
+2. Click **New > Web Service** → connect your GitHub repo
+3. Render will auto-detect `render.yaml` and configure the service
+4. Deploy — copy the URL it gives you (e.g. `https://sudoku-backend.onrender.com`)
+
+### Frontend — Vercel
+
+1. Go to [vercel.com](https://vercel.com) and import this GitHub repo
+2. Vercel will auto-detect `vercel.json` for build settings
+3. Add an environment variable:
+   - Key: `REACT_APP_BACKEND_URL`
+   - Value: your Render backend URL from above
+4. Deploy
+
+### Environment Variables
+
+Copy `.env.example` to `frontend/.env` for local development:
+
+```bash
+cp .env.example frontend/.env
+# Edit frontend/.env and set REACT_APP_BACKEND_URL if needed
+```
