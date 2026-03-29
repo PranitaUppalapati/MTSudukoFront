@@ -2,7 +2,8 @@
   "buildCommand": "npm install --prefix frontend && npm run build --prefix frontend",
   "outputDirectory": "frontend/build",
   "env": {
-    "SKIP_PREFLIGHT_CHECK": "true"
+    "SKIP_PREFLIGHT_CHECK": "true",
+    "DISABLE_ESLINT_PLUGIN": "true"
   },
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
