@@ -12,8 +12,6 @@ A real-time multiplayer Sudoku game where players compete to solve the same puzz
 
 ![Competitors Panel](docs/screenshots/competitors.png)
 
-![Instructions](docs/screenshots/instructions.png)
-
 ## Project Structure
 
 This is a monorepo containing both the frontend and backend:
