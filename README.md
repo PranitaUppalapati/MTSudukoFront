@@ -2,6 +2,8 @@
 
 A real-time multiplayer Sudoku game where players compete to solve the same puzzle simultaneously.
 
+**Live app:** https://mt-suduko-front-4kl8sgqpk-pranitauppalapatis-projects.vercel.app
+
 ## Screenshots
 
 ![Sudoku Game Board](docs/screenshots/gameplay.png)
