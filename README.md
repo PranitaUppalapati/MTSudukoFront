@@ -8,9 +8,9 @@ A real-time multiplayer Sudoku game where players compete to solve the same puzz
 
 ![Sudoku Game Board](docs/screenshots/gameplay.png)
 
-![Number Input & Show Mistakes](docs/screenshots/controls.png)
-
 ![Competitors Panel](docs/screenshots/competitors.png)
+
+![Instructions](docs/screenshots/instructions.png)
 
 ## Project Structure
 
